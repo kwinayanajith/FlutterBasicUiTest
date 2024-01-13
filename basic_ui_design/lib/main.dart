@@ -15,12 +15,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Basic UI',
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Basic Flutter UI"),
+          backgroundColor: Colors.green,
+          title: Center(
+            child: Text("Basic Flutter UI",style: TextStyle(
+              color: Colors.white
+            )),
+          ),
         ),
         body: SingleChildScrollView(
           child: Column(
 
             children: [
+              SizedBox(height: 30),
 
               Stack(
                 children: [
@@ -32,6 +38,14 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.grey.shade200,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 7,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
                       ),
                       child: Column(
                         children: [
@@ -45,19 +59,19 @@ class MyApp extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold
-          
+
                                 ),),
                                 Text("Rs 10 000",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black54
-          
+
                                 ),),
                               ],
                             ),
                           ),
-          
+
                           Padding(
                             padding: const EdgeInsets.only(right: 15.0, left: 15.0),
                             child: Row(
@@ -68,23 +82,23 @@ class MyApp extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black
                                 )),
-          
+
                                 Text("2KM to City",style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black87
                                 )),
-          
+
                                 Text("per night",style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black54
                                 )),
-          
+
                               ],
                             ),
                           ),
-          
+
                           Padding(
                             padding: const EdgeInsets.only(left: 15.0),
                             child: Row(
@@ -94,17 +108,17 @@ class MyApp extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black54
                                 )),
-          
+
                                 SizedBox(width: 15,),
-          
+
                                 Text("58 reviews",style: TextStyle(
                                   color: Colors.black54,
-          
+
                                 ),)
                               ],
                             ),
                           )
-          
+
                         ],
                       ),
                     ),
@@ -119,7 +133,7 @@ class MyApp extends StatelessWidget {
                         width: 350,
                         height: 180,
                         color: Colors.amberAccent,
-                        child: Image.asset("images/hotel01.jpg", fit: BoxFit.cover),
+                        child: Image.asset("images/hotel02.jpg", fit: BoxFit.cover),
                       ),
                     ),
                   ),
@@ -127,7 +141,7 @@ class MyApp extends StatelessWidget {
               ),
 
               SizedBox(height: 20,),
-          
+
               Stack(
                 children: [
                   Align(
@@ -138,6 +152,14 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.grey.shade200,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 7,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
                       ),
                       child: Column(
                         children: [
@@ -151,19 +173,19 @@ class MyApp extends StatelessWidget {
                                     color: Colors.black,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold
-          
+
                                 ),),
                                 Text("Rs 10 000",
                                   style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.black54
-          
+
                                   ),),
                               ],
                             ),
                           ),
-          
+
                           Padding(
                             padding: const EdgeInsets.only(right: 15.0, left: 15.0),
                             child: Row(
@@ -174,23 +196,23 @@ class MyApp extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black
                                 )),
-          
+
                                 Text("2KM to City",style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black87
                                 )),
-          
+
                                 Text("per night",style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black54
                                 )),
-          
+
                               ],
                             ),
                           ),
-          
+
                           Padding(
                             padding: const EdgeInsets.only(left: 15.0),
                             child: Row(
@@ -200,17 +222,17 @@ class MyApp extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black54
                                 )),
-          
+
                                 SizedBox(width: 15,),
-          
+
                                 Text("58 reviews",style: TextStyle(
                                   color: Colors.black54,
-          
+
                                 ),)
                               ],
                             ),
                           )
-          
+
                         ],
                       ),
                     ),
@@ -220,6 +242,7 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(15),
                         topRight: Radius.circular(15),
+
                       ),
                       child: Container(
                         width: 350,
@@ -233,7 +256,7 @@ class MyApp extends StatelessWidget {
               ),
 
               SizedBox(height: 20,),
-          
+
               Stack(
                 children: [
                   Align(
@@ -244,6 +267,14 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.grey.shade200,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            spreadRadius: 2,
+                            blurRadius: 7,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
                       ),
                       child: Column(
                         children: [
@@ -257,19 +288,19 @@ class MyApp extends StatelessWidget {
                                     color: Colors.black,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold
-          
+
                                 ),),
                                 Text("Rs 10 000",
                                   style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.black54
-          
+
                                   ),),
                               ],
                             ),
                           ),
-          
+
                           Padding(
                             padding: const EdgeInsets.only(right: 15.0, left: 15.0),
                             child: Row(
@@ -280,23 +311,23 @@ class MyApp extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black
                                 )),
-          
+
                                 Text("2KM to City",style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black87
                                 )),
-          
+
                                 Text("per night",style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black54
                                 )),
-          
+
                               ],
                             ),
                           ),
-          
+
                           Padding(
                             padding: const EdgeInsets.only(left: 15.0),
                             child: Row(
@@ -306,17 +337,17 @@ class MyApp extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                     color: Colors.black54
                                 )),
-          
+
                                 SizedBox(width: 15,),
-          
+
                                 Text("58 reviews",style: TextStyle(
                                   color: Colors.black54,
-          
+
                                 ),)
                               ],
                             ),
                           )
-          
+
                         ],
                       ),
                     ),
@@ -331,15 +362,17 @@ class MyApp extends StatelessWidget {
                         width: 350,
                         height: 180,
                         color: Colors.amberAccent,
-                        child: Image.asset("images/hotel01.jpg", fit: BoxFit.cover),
+                        child: Image.asset("images/hotel03.jpg", fit: BoxFit.cover),
                       ),
                     ),
                   ),
                 ],
               ),
-          
-          
-          
+
+              SizedBox(height: 40,)
+
+
+
               // Center(
               //   child: Container(
               //     width: 350,
